@@ -1,7 +1,7 @@
-const path = require('path');
-const { pipeline, Transform } = require('stream');
-const fs = require('fs');
-const csv = require('csvtojson');
+import path from 'path';
+import { pipeline, Transform } from 'stream';
+import fs from 'fs';
+import csv from 'csvtojson';
 
 const filePath = path.join(__dirname, '../csv', 'nodejs-hw1-ex1.csv');
 const outputPath = path.join(__dirname, '../output', 'task-2.2.json');
