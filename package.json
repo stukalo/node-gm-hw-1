@@ -1,0 +1,33 @@
+{
+  "name": "gm-hw-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./src/* -d dist",
+    "task1": "npm run build && nodemon ./dist/task1.js",
+    "task2.1": "npm run build && node ./dist/task2.1.js",
+    "task2.2": "npm run build && node ./dist/task2.2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stukalo/node-gm-hw-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stukalo/node-gm-hw-1/issues"
+  },
+  "homepage": "https://github.com/stukalo/node-gm-hw-1#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "@babel/plugin-transform-runtime": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
